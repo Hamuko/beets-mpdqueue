@@ -1,0 +1,14 @@
+language: python
+python:
+  - '3.6'
+install:
+  - pip install --upgrade pip
+  - pip install -e .
+deploy:
+  provider: pypi
+  user: cumbottler
+  distributions: sdist bdist_wheel
+  on:
+    tags: true
+  password:
+    secure: HzwZsiRgHVkQ4P3v4A/xcSEj3NdWM/ek2BF2rsfKeXCIUzUNhtevRw6xtej8dzFu432g2EYTG7B3X8HyvjtFyIy0q4ZLjja1Y7nFj4jtOqETcq1ksTeRTpV9wR+icFyHVPdu6Hx5od45O0b8YeIrEDz84s1s9HdrWa9rrXh0jzCmrMag3QZ2enb2PYFjYsHnN7R0Zcb8CiXMQjz5v8/IxaZ4uY7hQL7zskIpcVUrdXHcnyRcAqTnM858dF4TTCpl0e/zH2FiRataSsDWT91xnpw7k4R1LhpoXkOJERFgRHNi8fKNlTRB6fH+uIXat9dNEvATtqKAk3wKHvKV0kI4JCCAuoexUBxXS0VQnKOyWp1wdVuZGHlxx9BSVLfcj9OZDul0i+Zx5yEb1N4zQ9FzI4cil8XpJB2LTw9syToRAslKAlAFgqS3ipdZbJJPW0LrY31mY9ZGDRskodOjJILIeFwHcgUbMxNZEvMfgBZqS+Xx1vFpTjHiwAtnRMyReZ9Bm1iKN25Elnrh8caxj8m4IvqCBi45OSEPmk7vOg6vFztEkMWt3KMyPk8nZQ4UPnmz4cyL/4xbONu+TYucTyFy+Y//D5zjn2ZrBaAU/uCQNrdZdkkR5ft50JgMGabPacPpJ0sazHKFHTi1q6qil4IeHcq+Z5lZSjCARio1LJRy8u4=
