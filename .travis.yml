@@ -4,6 +4,8 @@ python:
 install:
   - pip install --upgrade pip
   - pip install -e .
+script:
+  - echo
 deploy:
   provider: pypi
   user: cumbottler

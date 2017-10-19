@@ -108,6 +108,11 @@ class MPDQueuePlugin(BeetsPlugin):
 
     def __init__(self):
         super(MPDQueuePlugin, self).__init__()
+        config['mpd'].add({
+            'host': os.environ.get('MPD_HOST', 'localhost'),
+            'port': 6600,
+            'password': '',
+        })
         config['mpd']['password'].redact = True
 
         self.files = []
@@ -147,9 +152,9 @@ class MPDQueuePlugin(BeetsPlugin):
             self._log.debug(u'No files to add to queue')
             return
 
-        host = config['mpd']['host'].get()
+        host = config['mpd']['host'].as_str()
         port = config['mpd']['port'].get(int)
-        password = config['mpd']['password'].get()
+        password = config['mpd']['password'].as_str()
         client = MusicPlayerDaemonClient(host, port, password)
 
         directories = set()
