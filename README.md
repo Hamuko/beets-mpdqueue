@@ -1,8 +1,18 @@
 # beets-mpdqueue
 
+[![PyPI](https://img.shields.io/pypi/v/beets-mpdqueue.svg)](https://pypi.python.org/pypi/beets-mpdqueue/)
+
 ## Description
 
 beets-mpdqueue is a [Beets](http://beets.io/) plugin to add files imported to the Beets library to [Music Player Daemon](https://www.musicpd.org/) queue, so you can start playing your new music immediately.
+
+## Installation
+
+The easiest way to install beets-mpdqueue is by downloading and installing it from [Python Package Index](https://pypi.python.org/pypi/cum) with the command
+
+    pip install beets-mpdqueue
+
+Please note that beets-mpdqueue is only tested with Python 3 and Python 2 is unsupported.
 
 ## Usage
 
