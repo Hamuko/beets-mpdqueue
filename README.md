@@ -8,7 +8,7 @@ beets-mpdqueue is a [Beets](http://beets.io/) plugin to add files imported to th
 
 ## Installation
 
-The easiest way to install beets-mpdqueue is by downloading and installing it from [Python Package Index](https://pypi.python.org/pypi/cum) with the command
+The easiest way to install beets-mpdqueue is by downloading and installing it from [Python Package Index](https://pypi.python.org/pypi/beets-mpdqueue/) with the command
 
     pip install beets-mpdqueue
 
