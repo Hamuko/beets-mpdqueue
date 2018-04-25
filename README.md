@@ -12,7 +12,7 @@ The easiest way to install beets-mpdqueue is by downloading and installing it fr
 
     pip install beets-mpdqueue
 
-Please note that beets-mpdqueue is only tested with Python 3 and Python 2 is unsupported.
+Please note that beets-mpdqueue is only tested with Python 3, and Python 2 is unsupported.
 
 ## Usage
 
