@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="beets-mpdqueue",
-    version="0.1",
+    version="0.2",
     description='Beets plugin to add imported files to MPD queue.',
     url='https://github.com/Hamuko/beets-mpdqueue',
     author='Hamuko',
