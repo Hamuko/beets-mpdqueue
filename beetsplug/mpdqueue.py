@@ -134,7 +134,7 @@ class MPDQueuePlugin(BeetsPlugin):
         tracks = []
         items = sorted(task.imported_items(), key=lambda x: x.track)
         for item in items:
-            destination = item.destination(fragment=True)
+            destination = item.destination(relative_to_libdir=True).decode()
             self._log.debug(u'{0} will be added to queue', destination)
             tracks.append(destination)
         self.files += tracks
