@@ -8,6 +8,9 @@ authors = [
     { name = "Hamuko", email = "hamuko@burakku.com" }
 ]
 requires-python = ">=3.9"
+dependencies = [
+    "beets>=2.3.0",
+]
 
 [project.urls]
 Repository = "https://github.com/Hamuko/beets-mpdqueue"
